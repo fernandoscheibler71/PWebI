@@ -10,12 +10,66 @@
 </head>
 
 <body>
+<style>
+
+body{
+  background-color:#0f172a;
+}
+
+
+.navbar{
+  background-color:#020617 !important;
+}
+
+
+.navbar .nav-link{
+  color:white !important;
+}
+
+.navbar .nav-link:hover{
+  color:#e10600 !important;
+}
+
+
+.card{
+  border:none;
+  transition: transform 0.2s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+}
+
+
+.btn-primary{
+  background-color:#e10600;
+  border:none;
+}
+
+.btn-primary:hover{
+  background-color:#b10500;
+}
+
+
+.jumbotron{
+  background-color:#020617;
+  color:white;
+  padding:60px;
+  margin-top:40px;
+}
+
+
+footer{
+  background-color:#020617;
+}
+
+</style>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="#">Título</a>
+      <a class="navbar-brand mx-auto" href="#"><img src="https://imgs.search.brave.com/op8Ukmk-z-3lYMMW9yPMar3Ebr4DwvIf9PfBcwpDXS8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuY2RubG9nby5j/b20vbG9nb3MvZi85/Ny9mMS1uZXdfdGh1/bWIucG5n" alt="Logo" height="40"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -23,14 +77,14 @@
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
 
-        <div class="navbar-nav">
-          <a class="nav-link active" href="#">Loja</a>
-          <a class="nav-link" href="#">Perfil</a>
-          <a class="nav-link" href="#">Mensagens</a>
-          <a class="nav-link" href="#">Reports</a>
+        <div class="navbar-nav ms-4">
+          <a class="nav-link active" href="#">Idolos</a>
+          <a class="nav-link" href="#">Carros</a>
+          <a class="nav-link" href="#">história</a>
+          <a class="nav-link" href="#">Loja</a>
         </div>
 
-        <div class="navbar-nav ms-auto">
+        <div class="navbar-nav mx-auto ms-4">
           <a class="nav-link" href="#">Login</a>
         </div>
 
@@ -41,11 +95,83 @@
   <!-- Conteúdo -->
   <div class="container text-center mt-4">
     <div class="row">
-      <div class="col border p-3">Trem</div>
-      <div class="col border p-3">Carros</div>
-      <div class="col border p-3">Avião</div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+            <div class="card shadow w-100">
+                <img src="https://cdn-1.motorsport.com/images/amp/68yq1qV0/s1000/gettyimages-479762017-a75.jpg" class="card-img-top" style="height: 250px; object-fit: cover; " alt="Ayrton Sena">
+              <div class="card-body">
+                <h5 class="card-title">Ayrton Sena</h5>
+                <p class="card-text">Tricampeão mundial de Fórmula 1 e considerado um dos pilotos mais talentosos da história do automobilismo.</p>
+                <a href="#" class = "btn btn-primary">Saiba mais</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+            <div class="card shadow w-100">
+                <img src="https://imgs.search.brave.com/jCB3ylJshhb2Vd2J2EnIzqlEaLfi9Q3sRMa4Ezww3ao/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE4/MjY5NDQ2MS9waG90/by9zYW8tcGF1bG8t/YnJhemlsLXJhY2Ut/d2lubmVyLW1heC12/ZXJzdGFwcGVuLW9m/LXRoZS1uZXRoZXJs/YW5kcy1hbmQtb3Jh/Y2xlLXJlZC1idWxs/LXJhY2luZy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9SVlz/bmFWcUFlUmg3cmZf/Y3hvUUN5WTVTWjBF/dVZtVkdNRDhCeUVy/c1E3az0" class="card-img-top" style="height: 250px; object-fit: cover; " alt="Max Verstappen">
+              <div class="card-body">
+                <h5 class="card-title">Max Verstappen</h5>
+                <p class="card-text">Piloto holandês da Red Bull e um dos maiores talentos da nova geração da Fórmula 1.</p>
+                <a href="#" class = "btn btn-primary">Saiba Mais</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+            <div class="card shadow w-100">
+                <img src="https://imgs.search.brave.com/5hIRqHoLW6pRn4CA7UM8seLcxmpOizOWXeuvvDCzHuc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE4/ODM1NDgxNy9waG90/by9hYnUtZGhhYmkt/dW5pdGVkLWFyYWIt/ZW1pcmF0ZXMtbGV3/aXMtaGFtaWx0b24t/b2YtZ3JlYXQtYnJp/dGFpbi1hbmQtbWVy/Y2VkZXMtbG9va3Mt/b24tYXQtdGhlLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1Z/WUFLajNibjVIa1hj/bkdIQzFNMlYzbjhY/ZHU1Z1JldjlHVjl2/T3BkR1A4PQ" class="card-img-top" style="height: 250px; object-fit: cover; " alt="Lewis Hamilton">
+              <div class="card-body">
+                <h5 class="card-title">Lewis Hamilton</h5>
+                <p class="card-text">Heptacampeão mundial e recordista de vitórias na história da Fórmula 1.</p>
+                <a href="#" class = "btn btn-primary">Saiba Mais</a>
+              </div>
+            </div>
+     </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+            <div class="card shadow w-100">
+                <img src="https://cdn-7.motorsport.com/images/amp/2yZKm4nY/s6/formula-1-canadian-gp-1988-ayr-2.jpg" class="card-img-top" style="height: 250px; object-fit: cover; " alt="Lewis Hamilton">
+              <div class="card-body">
+                <h5 class="card-title">McLaren MP4/4</h5>
+                <p class="card-text">O lendário McLaren MP4/4 foi o carro do primeiro título mundial de Senna em 1988, considerado um dos carros mais dominantes da história da Fórmula 1.</p>
+                <a href="#" class = "btn btn-primary">Saiba Mais</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+            <div class="card shadow w-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/FIA_F1_Austria_2023_Nr._1_%281%29.jpg" class="card-img-top" style="height: 250px; object-fit: cover; " alt="Lewis Hamilton">
+              <div class="card-body">
+                <h5 class="card-title">Red Bull RB19</h5>
+                <p class="card-text">O Red Bull RB19 dominou a temporada de 2023 e ajudou Verstappen a conquistar mais um título mundial com recordes históricos de vitórias.</p>
+                <a href="#" class = "btn btn-primary">Saiba Mais</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+            <div class="card shadow w-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Lewis_Hamilton_2020_Tuscan_Grand_Prix_-_race_day_%28cropped%29.jpg" class="card-img-top" style="height: 250px; object-fit: cover; " alt="Lewis Hamilton">
+              <div class="card-body">
+                <h5 class="card-title">Mercedes W11</h5>
+                <p class="card-text">O Mercedes W11 foi um dos carros mais rápidos da história da Fórmula 1 e levou Hamilton ao seu sétimo título mundial em 2020.</p>
+                <a href="#" class = "btn btn-primary">Saiba Mais</a>
+              </div>
+            </div>
+        </div>
+        
     </div>
   </div>
+
+<div class="jumbotron text-center">
+  <h1 class="display-4">Uso de Jumbotron</h1>
+  <p class="lead">Site que fala sobre alguns pilotos de formula 1</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais</a>
+</div>
+
+<footer class="bg-dark text-white text-center p-4 mt-5">
+    <img src="https://imgs.search.brave.com/9JKBuw8qxG6pOJh0-IC6WXsmZlR-l52JGVxmdrSu2mM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Ym9vZ2xpdC5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MDMvQm9vdHN0cmFw/LTQtSW1hZ2VzLnBu/Zw" class="img-fluid mb-2" width="80" alt="Bootstrap">
+    <p class="mb-0">Feito com Bootstrap</p>
+</footer>
+
+
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
